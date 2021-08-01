@@ -16,15 +16,17 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="youtube__logo">
-      <h1>
-        <a href="/">
-          <i class="fab fa-youtube"></i> YouTube</a>
+    <div class="inner">
+      <div class="youtube__logo">
+        <h1>
+          <a href="/">
+            <i class="fab fa-youtube"></i> YouTube</a>
         </h1>
-    </div>
-    <div class="youtube__icons">
-      <i class="fas fa-search"></i>
-      <i class="fas fa-ellipsis-v"></i>
+      </div>
+      <div class="youtube__icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
     </div>
   </header>
   <!-- Player -->
@@ -33,100 +35,111 @@
       <video src="./video/video.mp4" controls muted loop></video>
     </div>
   </section>
-  <!-- Main -->
-  <section id="main">
-    <div class="inner">
-    <ul class="youtube__tags">
-      <li><a href="#">#Front-end</a></li>
-      <li><a href="#">#https://velog.io/@jeonhyelin</a></li>
-      <li><a href="#">#DreamCoder</a></li>
-    </ul>
-    <div class="youtube__title">
-      <p class="title clamp">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-      <button class="btn"><i class="fas fa-caret-down"></i></button>
-    </div>
-    <div class="youtube__views">
-      <span>1M views 1 month ago</span>
-    </div>
-    <ul class="youtube__click">
-      <li>
-        <button class="btn btn--click">
-          <i class="fas fa-thumbs-up"></i>
-          <p>1K</p>
-        </button>
-      </li>
-      <li>
-        <button class="btn btn--click">
-          <i class="fas fa-thumbs-down"></i>
-          <p>0</p>
-        </button>
-      </li>
-      <li>
-        <button class="btn btn--click">
-          <i class="fas fa-share"></i>
-          <p>Share</p>
-        </button>
-      </li>
-      <li>
-        <button class="btn btn--click">
-          <i class="fas fa-plus"></i>
-          <p>Save</p>
-        </button>
-      </li>
-      <li>
-        <button class="btn btn--click">
-          <i class="fab fa-font-awesome-flag"></i>
-          <p>Report</p>
-        </button>
-      </li>
-    </ul>
-    <div class="youtube__subscribe">
-      <img src="./images/photo.PNG" alt="avatar">
-      <div class="info">
-      <h4>리듬타는병아리</h4>
-      <p>1M subcribers</p>
+  <div class="mainAndUpnext">
+    <!-- Main -->
+    <section id="main">
+      <div class="inner">
+        <ul class="youtube__tags">
+          <li><a href="#">#Front-end</a></li>
+          <li><a href="#">#https://velog.io/@jeonhyelin</a></li>
+          <li><a href="#">#DreamCoder</a></li>
+        </ul>
+        <div class="youtube__title">
+          <p class="title clamp">There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+            believable.</p>
+          <button class="btn"><i class="fas fa-caret-down"></i></button>
+        </div>
+        <div class="youtube__views">
+          <span>1M views 1 month ago</span>
+        </div>
+        <ul class="youtube__click">
+          <li>
+            <button class="btn btn--click">
+              <i class="fas fa-thumbs-up"></i>
+              <span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn--click">
+              <i class="fas fa-thumbs-down"></i>
+              <span>0</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn--click">
+              <i class="fas fa-share"></i>
+              <span>Share</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn--click">
+              <i class="fas fa-plus"></i>
+              <span>Save</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn--click">
+              <i class="fab fa-font-awesome-flag"></i>
+              <span>Report</span>
+            </button>
+          </li>
+        </ul>
+        <div class="youtube__subscribe">
+          <img src="./images/photo.PNG" alt="avatar">
+          <div class="info">
+            <h4>리듬타는병아리</h4>
+            <p>1M subcribers</p>
+          </div>
+          <button class="btn subscribe">subscribe</button>
+        </div>
       </div>
-      <button class="btn subscribe">subscribe</button>
-    </div>
+    </section>
+    <!-- upNext -->
+    <section id="upNext">
+      <div class="inner">
+        <p class="text">Up next</p>
+        <div class="youtube__next">
+          <div class="img">
+            <img src="./images/me1.jpg" alt="">
+          </div>
+          <ul class="next">
+            <li class="title">It is a long established fact that a reader will be distracted by the readable content
+              of a page when looking at its layout.</li>
+            <li class="name">리듬타는병아리</li>
+            <li class="views">95K views</li>
+          </ul>
+          <button class="btn"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div class="youtube__next">
+          <div class="img">
+            <img src="./images/me2.jpg" alt="">
+          </div>
+          <ul class="next">
+            <li class="title">
+              It is a long established fact that a reader will be distracted by the readable content of
+              a page when looking at its layout.</li>
+            <li class="name">리듬타는병아리</li>
+            <li class="views">72K views</li>
+          </ul>
+          <button class="btn"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+        <div class="youtube__next">
+          <div class="img">
+            <img src="./images/me3.jpg" alt="">
+          </div>
+          <ul class="next">
+            <li class="title">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+              necessary,
+              making this the first true generator on the Internet.</li>
+            <li class="name">리듬타는병아리</li>
+            <li class="views">81K views</li>
+          </ul>
+          <button class="btn"><i class="fas fa-ellipsis-v"></i></button>
+        </div>
+      </div>
+    </section>
   </div>
-  </section>
-  <!-- upNext -->
-  <section id="upNext">
-    <div class="inner">
-    <p class="text">Up next</p>
-    <div class="youtube__next">
-      <img src="./images/me1.jpg" alt="">
-      <ul class="next">
-        <li class="title">It is a long established fact that a reader will be distracted by the readable content
-          of a page when looking at its layout.</li>
-        <li class="name">리듬타는병아리</li>
-        <li class="views">95K views</li>
-      </ul>
-      <button class="btn"><i class="fas fa-ellipsis-v"></i></button>
-    </div>
-    <div class="youtube__next">
-      <img src="./images/me2.jpg" alt="">
-      <ul class="next">
-        <li class="title">
-          It is a long established fact that a reader will be distracted by the readable content of
-          a page when looking at its layout.</li>
-        <li class="name">리듬타는병아리</li>
-        <li class="views">72K views</li>
-      </ul>
-      <button class="btn"><i class="fas fa-ellipsis-v"></i></button>
-    </div>
-    <div class="youtube__next">
-      <img src="./images/me3.jpg" alt="">
-      <ul class="next">
-        <li class="title">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-          making this the first true generator on the Internet.</li>
-        <li class="name">리듬타는병아리</li>
-        <li class="views">81K views</li>
-      </ul>
-      <button class="btn"><i class="fas fa-ellipsis-v"></i></button>
-    </div>
-  </div>
-  </section>
 </body>
 
 </html>

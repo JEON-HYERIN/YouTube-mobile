@@ -62,15 +62,18 @@ i {
 }
 
 .inner {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 /* HEADER */
 header {
+  background-color: var(--black-color);
+}
+
+header > .inner{
   display: flex;
   justify-content: space-between;
-  background-color: var(--black-color);
   color: var(--white-color);
   padding: var(--spacing);
 }
@@ -173,9 +176,15 @@ header {
   margin-bottom: var(--spacing-small);
 }
 
+.youtube__click li {
+  text-align: center;
+}
+
 .youtube__click .btn--click {
   color: var(--grey-dark-color);
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .youtube__click .btn--click:hover i {
@@ -199,7 +208,7 @@ header {
   color: var(--blue-color);
 }
 
-.youtube__click .btn--click p {
+.youtube__click .btn--click span {
   font-size: var(--font-small);
   line-height: 1.8em;
 }
@@ -215,9 +224,7 @@ header {
 .youtube__subscribe img {
   border-radius: 50%;
   overflow: hidden;
-  outline: none;
   flex-basis: 10%;
-  
 }
 
 .youtube__subscribe .info {
@@ -262,9 +269,12 @@ header {
   margin-bottom: var(--spacing);
 }
 
-.youtube__next img {
-  height: 100px;
+.youtube__next .img {
   flex-basis: 30%;
+}
+
+.youtube__next .img img {
+  width: 100%;
 }
 
 .youtube__next .next{
@@ -298,13 +308,38 @@ header {
   color: #656565;
 }
 
+.mainAndUpnext {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width:768px) {
   #player {
     position: relative;
   }
 
   .youtube__next img {
-    height: 220px;
+    /* height: 220px; */
   }
+  
+  .mainAndUpnext {
+    flex-direction: row;
+  }
+
+  #main {
+    flex-basis: 50%;
+  }
+
+  #main > .inner {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  #upNext {
+    flex-basis: 50%;
+  }
+
 }
 
